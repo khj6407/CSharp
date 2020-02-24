@@ -1,0 +1,11 @@
+C:\Users\kimhanju\Desktop\study\C#\HelloCSharpWin\bin\Debug\netcoreapp3.1\HelloCSharpWin.exe
+C:\Users\kimhanju\Desktop\study\C#\HelloCSharpWin\bin\Debug\netcoreapp3.1\HelloCSharpWin.deps.json
+C:\Users\kimhanju\Desktop\study\C#\HelloCSharpWin\bin\Debug\netcoreapp3.1\HelloCSharpWin.runtimeconfig.json
+C:\Users\kimhanju\Desktop\study\C#\HelloCSharpWin\bin\Debug\netcoreapp3.1\HelloCSharpWin.runtimeconfig.dev.json
+C:\Users\kimhanju\Desktop\study\C#\HelloCSharpWin\bin\Debug\netcoreapp3.1\HelloCSharpWin.dll
+C:\Users\kimhanju\Desktop\study\C#\HelloCSharpWin\bin\Debug\netcoreapp3.1\HelloCSharpWin.pdb
+C:\Users\kimhanju\Desktop\study\C#\HelloCSharpWin\obj\Debug\netcoreapp3.1\HelloCSharpWin.csprojAssemblyReference.cache
+C:\Users\kimhanju\Desktop\study\C#\HelloCSharpWin\obj\Debug\netcoreapp3.1\HelloCSharpWin.AssemblyInfoInputs.cache
+C:\Users\kimhanju\Desktop\study\C#\HelloCSharpWin\obj\Debug\netcoreapp3.1\HelloCSharpWin.AssemblyInfo.cs
+C:\Users\kimhanju\Desktop\study\C#\HelloCSharpWin\obj\Debug\netcoreapp3.1\HelloCSharpWin.dll
+C:\Users\kimhanju\Desktop\study\C#\HelloCSharpWin\obj\Debug\netcoreapp3.1\HelloCSharpWin.pdb
