@@ -10,18 +10,17 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public enum Season { Spring, Summer, Fall, Winter } 
+    public enum Operators { Add, Sub, Multi, Div } 
 
     public partial class Calculator : Form
     {
         public int Result = 0;
         public bool isNewNum = true;
+        public Operators Opt = Operators.Add;
 
         public Calculator()
         {
             InitializeComponent();
-
-            int number1;
         }
 
 
@@ -37,7 +36,7 @@ namespace WindowsFormsApp1
             return sum;
         }
 
-        public int sub(int number1, int number2)
+        public int Sub(int number1, int number2)
         {
             int sub = number1 - number2;
             return sub;
@@ -69,14 +68,40 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int num = int.Parse(NumScreen.Text);
-            Result = Result + num;
+            if (isNewNum == false)
+            {
+                int num = int.Parse(NumScreen.Text);
+                if (Opt == Operators.Add)
+                {
+                    Result = Add(Result, num);
+                }
+                else if (Opt == Operators.Sub)
+                {
+                    Result = Sub(Result, num);
+                }
 
-            NumScreen.Text = Result.ToString();
-            isNewNum = true;
+                NumScreen.Text = Result.ToString();
+                isNewNum = true;
+            }
+
+            Button optButton = (Button)sender;
+            if(optButton.Text == "+")
+            {
+                Opt = Operators.Add;
+            }else if (optButton.Text == "-")
+            {
+                Opt = Operators.Sub;
+            }
         }
 
-       
+        private void NumClear_Click(object sender, EventArgs e)
+        {
+            Result = 0;
+            isNewNum = true;
+            Opt = Operators.Add;
+
+            NumScreen.Text = "0";
+        }
     }
 
 }

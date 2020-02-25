@@ -40,11 +40,14 @@
             this.NumButton8 = new System.Windows.Forms.Button();
             this.NumButton7 = new System.Windows.Forms.Button();
             this.NumButton10 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.NumClear = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // NumButton1
             // 
-            this.NumButton1.Location = new System.Drawing.Point(26, 132);
+            this.NumButton1.Location = new System.Drawing.Point(24, 231);
             this.NumButton1.Name = "NumButton1";
             this.NumButton1.Size = new System.Drawing.Size(126, 117);
             this.NumButton1.TabIndex = 0;
@@ -54,7 +57,7 @@
             // 
             // NumButton2
             // 
-            this.NumButton2.Location = new System.Drawing.Point(188, 132);
+            this.NumButton2.Location = new System.Drawing.Point(186, 231);
             this.NumButton2.Name = "NumButton2";
             this.NumButton2.Size = new System.Drawing.Size(131, 117);
             this.NumButton2.TabIndex = 2;
@@ -69,14 +72,14 @@
             this.NumScreen.Font = new System.Drawing.Font("굴림", 12F);
             this.NumScreen.Location = new System.Drawing.Point(16, 12);
             this.NumScreen.Name = "NumScreen";
-            this.NumScreen.Size = new System.Drawing.Size(851, 85);
+            this.NumScreen.Size = new System.Drawing.Size(610, 80);
             this.NumScreen.TabIndex = 3;
             this.NumScreen.Text = "0";
             this.NumScreen.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Plus
             // 
-            this.Plus.Location = new System.Drawing.Point(748, 132);
+            this.Plus.Location = new System.Drawing.Point(507, 496);
             this.Plus.Name = "Plus";
             this.Plus.Size = new System.Drawing.Size(119, 117);
             this.Plus.TabIndex = 4;
@@ -86,7 +89,7 @@
             // 
             // NumButton3
             // 
-            this.NumButton3.Location = new System.Drawing.Point(356, 132);
+            this.NumButton3.Location = new System.Drawing.Point(354, 231);
             this.NumButton3.Name = "NumButton3";
             this.NumButton3.Size = new System.Drawing.Size(120, 117);
             this.NumButton3.TabIndex = 5;
@@ -96,7 +99,7 @@
             // 
             // NumButton6
             // 
-            this.NumButton6.Location = new System.Drawing.Point(356, 277);
+            this.NumButton6.Location = new System.Drawing.Point(354, 363);
             this.NumButton6.Name = "NumButton6";
             this.NumButton6.Size = new System.Drawing.Size(120, 117);
             this.NumButton6.TabIndex = 8;
@@ -106,7 +109,7 @@
             // 
             // NumButton5
             // 
-            this.NumButton5.Location = new System.Drawing.Point(188, 277);
+            this.NumButton5.Location = new System.Drawing.Point(186, 363);
             this.NumButton5.Name = "NumButton5";
             this.NumButton5.Size = new System.Drawing.Size(131, 117);
             this.NumButton5.TabIndex = 7;
@@ -116,7 +119,7 @@
             // 
             // NumButton4
             // 
-            this.NumButton4.Location = new System.Drawing.Point(26, 277);
+            this.NumButton4.Location = new System.Drawing.Point(24, 363);
             this.NumButton4.Name = "NumButton4";
             this.NumButton4.Size = new System.Drawing.Size(126, 117);
             this.NumButton4.TabIndex = 6;
@@ -126,7 +129,7 @@
             // 
             // NumButton9
             // 
-            this.NumButton9.Location = new System.Drawing.Point(356, 420);
+            this.NumButton9.Location = new System.Drawing.Point(354, 496);
             this.NumButton9.Name = "NumButton9";
             this.NumButton9.Size = new System.Drawing.Size(120, 117);
             this.NumButton9.TabIndex = 11;
@@ -136,7 +139,7 @@
             // 
             // NumButton8
             // 
-            this.NumButton8.Location = new System.Drawing.Point(188, 420);
+            this.NumButton8.Location = new System.Drawing.Point(186, 496);
             this.NumButton8.Name = "NumButton8";
             this.NumButton8.Size = new System.Drawing.Size(131, 117);
             this.NumButton8.TabIndex = 10;
@@ -146,7 +149,7 @@
             // 
             // NumButton7
             // 
-            this.NumButton7.Location = new System.Drawing.Point(26, 420);
+            this.NumButton7.Location = new System.Drawing.Point(24, 496);
             this.NumButton7.Name = "NumButton7";
             this.NumButton7.Size = new System.Drawing.Size(126, 117);
             this.NumButton7.TabIndex = 9;
@@ -156,19 +159,52 @@
             // 
             // NumButton10
             // 
-            this.NumButton10.Location = new System.Drawing.Point(506, 420);
+            this.NumButton10.Location = new System.Drawing.Point(186, 629);
             this.NumButton10.Name = "NumButton10";
-            this.NumButton10.Size = new System.Drawing.Size(120, 117);
+            this.NumButton10.Size = new System.Drawing.Size(131, 121);
             this.NumButton10.TabIndex = 12;
             this.NumButton10.Text = "0";
             this.NumButton10.UseVisualStyleBackColor = true;
             this.NumButton10.Click += new System.EventHandler(this.NumButton1_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(507, 363);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(119, 117);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "-";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // NumClear
+            // 
+            this.NumClear.Location = new System.Drawing.Point(186, 95);
+            this.NumClear.Name = "NumClear";
+            this.NumClear.Size = new System.Drawing.Size(131, 117);
+            this.NumClear.TabIndex = 14;
+            this.NumClear.Text = "C";
+            this.NumClear.UseVisualStyleBackColor = true;
+            this.NumClear.Click += new System.EventHandler(this.NumClear_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(507, 633);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(119, 117);
+            this.button2.TabIndex = 15;
+            this.button2.Text = "=";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(879, 632);
+            this.ClientSize = new System.Drawing.Size(660, 777);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.NumClear);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.NumButton10);
             this.Controls.Add(this.NumButton9);
             this.Controls.Add(this.NumButton8);
@@ -202,6 +238,9 @@
         private System.Windows.Forms.Button NumButton8;
         private System.Windows.Forms.Button NumButton7;
         private System.Windows.Forms.Button NumButton10;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button NumClear;
+        private System.Windows.Forms.Button button2;
     }
 }
 
